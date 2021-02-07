@@ -25,7 +25,7 @@ public class StudentController {
     }
 
     @GetMapping("/api/student/{StudentId}")
-    public StudentModel getEmployee(@PathVariable(name="StudentId")Long StudentId) {
+    public StudentModel getStudent(@PathVariable(name="StudentId")Long StudentId) {
         return studentService.getStudent(StudentId);
     }
 
